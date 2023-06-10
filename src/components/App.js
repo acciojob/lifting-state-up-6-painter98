@@ -1,7 +1,7 @@
 
 import React from "react";
 import './../styles/App.css';
-import List from './List.js';
+import List from './list.js';
 
 const App = () => {
   
