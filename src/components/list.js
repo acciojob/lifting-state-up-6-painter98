@@ -2,11 +2,11 @@ import React,{useState} from 'react';
 
 
 const List = ({words}) => {
-    let [isComplete,SetComplete] = useState(false);
+    let [todo,SetTodo] = useState('notcompleted');
     return (
         <li>
              <span>{words}</span>
-              {isComplete?'':<button onClick={()=>SetComplete(true)}>Complete</button>}
+             {todo=='completed'?'':<button onClick={()=>SetTodo('completed')}>Complete</button>}
         </li>
     )
 }
